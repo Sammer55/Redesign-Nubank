@@ -4,12 +4,17 @@ export const Wrapper = styled.div`
   right: 0px;
   top: 200px;
   padding: 60px 24px;
-  position: absolute;
+  position: relative;
   background: rgba(255, 255, 255, 0.74);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8px);
   border-radius: 16px;
-  max-width: 323px;
+  max-width: 100%;
+
+  @media (min-width: 800px) {
+    max-width: 323px;
+    position: absolute;
+  }
 `;
 
 export const Title = styled.h2`

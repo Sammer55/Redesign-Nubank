@@ -24,6 +24,11 @@ export const Container = styled.div`
   transition: 0.5s ease;
   position: relative;
   justify-content: space-evenly;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 
   @media (max-width: 1200px) {
     padding: 60px 20px 60px 20px;
